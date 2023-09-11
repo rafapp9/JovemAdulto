@@ -8,9 +8,12 @@ public class Aplicação {
 		
 		Rafael R = new Rafael();
 		Antonio A = new Antonio();
+		Pessoa P = new Pessoa();
+		int reforma = 65;
 				
-		
-		R.Nome();
+		/*
+		R.setNome ("Rafael");
+		System.out.println("O seu nome é: " + R.getNome());
 		R.Idade();
 		R.Jovem();
 		R.Emprego();
@@ -20,7 +23,20 @@ public class Aplicação {
 		A.Idade();
 		A.Jovem();
 		A.Emprego();
-		A.Montante();
+		A.Montante(); 
+		*/
+		
+		P.setNome("Rafa");
+		System.out.println("O nome é: " + P.getNome());
+		
+		P.setIdade(77);		
+		//System.out.println("Anos até à reforma: " + (reforma - P.getIdade()));
+		
+		if (reforma - P.getIdade() <= 0) {
+			System.out.println("Já está reformado");
+		} else
+			System.out.println("Anos até à reforma: " + (reforma - P.getIdade()));
+		
 
 		
 	}
